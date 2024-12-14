@@ -1,0 +1,171 @@
+/* Container to center the profile card */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation for the entire container */
+}
+
+/* Profile card with shadow and rounded corners */
+.profile-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+  animation: slideUp 0.8s ease-out; /* Animation for sliding up */
+}
+
+/* Animation for sliding the profile card from the bottom */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header styling */
+.profile-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  animation: textFadeIn 1s ease-in-out; /* Fade-in animation for header */
+}
+
+/* Animation for the profile card header text */
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Styling the profile info text */
+.profile-info p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Hover effect for profile information */
+.profile-info p:hover {
+  color: #007BFF; /* Change color to blue on hover */
+  cursor: pointer;
+}
+
+/* Logout button with hover effect */
+.logout-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2); /* Soft shadow for button */
+}
+
+/* Hover effect for the logout button */
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+/* Focus effect for inputs if any (for accessibility) */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Adding some spacing between profile info and logout button */
+.profile-card .profile-info {
+  margin-bottom: 20px;
+}
+
+/* Login Container */
+.login-container {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Login Form */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Form Header */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004085;
+}
